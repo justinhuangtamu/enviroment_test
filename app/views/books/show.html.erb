@@ -2,7 +2,14 @@
 
 <p>
   <strong>Title:</strong>
-  <%= @book.title %>
+  <%= @book.title %><br></br>
+  <strong>Author:</strong>
+  <%= @book.author %><br></br>
+  <strong>Price:</strong>
+  <%= @book.price %><br></br>
+  <strong>Date:</strong>
+  <%= @book.date %>
+  
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
