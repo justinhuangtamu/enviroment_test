@@ -17,7 +17,7 @@ RSpec.describe 'Creating a book', type: :feature do
     visit new_book_path
 	fill_in 'Author', with: 'rowling'
 	fill_in 'Price', with: '7'
-	fill_in 'Date', with: '10/31/1981'
+	fill_in 'Date', with: '1981-10-31'
     click_on 'Create Book'
     expect(page).to have_content("Title can't be blank")
   end
